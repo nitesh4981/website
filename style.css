@@ -1,0 +1,167 @@
+.header {
+	background: rgb(36,0,23);
+background: linear-gradient(112deg, rgba(36,0,23,1) 0%, rgba(55,9,121,1) 24%, rgba(47,160,183,1) 100%);
+  text-align: center;
+  padding: 20px;
+  align-content: center;
+  min-height:200px;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.leftcolumn {   
+  float: left;
+  width: 30%;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 65%;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  padding-left: 10px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+  border: 20px grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+ background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+/*body {
+  background-color: powderblue;
+}*/
+h1 {
+  color: grey;
+
+}
+p {
+  color: red;
+}
+#content {
+	background: white;
+	color: black;
+	
+
+}
+
+
+
+}
+#profile{
+	border: 10px solid black;
+	width: 200px;
+
+}
+h5{
+	background: powderblue;
+	color: black;
+}
+h4{
+	background: grey;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@keyframes example {
+  0%   {background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);; left:0px; top:0px;}
+  25%  {background: rgb(34,193,195);
+background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);; left:250px; top:0px;transform: rotateX(30deg);}
+  50%  {background: rgb(34,193,195);
+background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);; left:500px; top:0px;transform: rotateX(0deg);}
+  75%  {background: rgb(34,193,195);
+background: linear-gradient(270deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);; left:750px; top:0px;transform: rotateX(30deg);}
+  100% {background: rgb(34,193,195);
+background: linear-gradient(360deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);; left:1000px; top:0px;}
+}
+
+/* The element to apply the animation to */
+#animation{
+	border-radius: 25px;
+  width: 200px;
+
+  height: 60px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ border: 10px solid black;
+  text-align: center;
+  padding: 0;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  animation-delay: 1s;
+  margin-top: 10px;
+	padding-top: 10px;
+	align-content: center;
+}
+input{
+	margin-top: 10px;
+	padding-top: 10px;
+}
+#profile{
+	float: left;
+}
+
+.footer {
+	margin-top: 20px;
+	border: 10px solid black;
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  
+}
