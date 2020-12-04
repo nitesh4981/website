@@ -31,7 +31,9 @@
   			<a id="two" href="#About">
   					<span>About</span>
   					</a>
-  			<a href="#">Contact</a>
+  			<a id="three" href="#About">
+  					<span>Contact</span>
+  					</a>		
   			 <a href="#" style="float:right">Link</a>
 		</div>
 		<div id="animation">
@@ -57,6 +59,7 @@
 				
       
     </div>
+    <div id="Contact" style="display: none;">
     <div class="card">
       <h2>CONTACT</h2>
       <hr>
@@ -72,6 +75,7 @@
       <p><a href="https://www.facebook.com/nitesh.chaudhary4981/">Nitesh Chaudhary</a><img src="facebook.png" height="15px" width="15px"></p>
 
     </div>
+</div>
 
   </div>
   <div class="rightcolumn" id="About"  style="display: none;">
@@ -125,15 +129,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-	$("#two").click(function(){
-		$("#About").show("slow");
 
-
-	});
-	});
-</script>
 		
 
 		<div class="footer">
@@ -154,6 +150,25 @@
 		</div>
  
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#two").click(function(){
+		$("#About").show("slow");
+
+
+	});
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#three").click(function(){
+		$("#Contact").toggle("slow");
+
+
+	});
+	});
+	
+</script>
 		
 		
 
